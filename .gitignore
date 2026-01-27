@@ -1,0 +1,23 @@
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# --- Environment ---
+# Ignore the folder containing the actual library files
+.venv/
+
+# --- uv Specific ---
+# This file tracks the specific Python version used locally
+.python-version
+
+# --- Secrets ---
+# NEVER push API keys or secrets to GitHub
+.env
+
+# --- VSCode ---
+.vscode/
+
+# --- Scripts ---
+scripts/
