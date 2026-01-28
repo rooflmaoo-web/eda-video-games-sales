@@ -328,18 +328,6 @@ wheels = [
 ]
 
 [[package]]
-name = "jupyter-dark-detect"
-version = "0.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "ipython" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/72/5b/4e3fc83ffd16d502bf34a143f1c6453da0ffacf7d461e825c5926bbcaa09/jupyter_dark_detect-0.1.0.tar.gz", hash = "sha256:b0358da684f1e36d0a869e839fa55dc1d9183cfc3ff228fe416d5132a7f36bcc", size = 7167, upload-time = "2025-07-27T16:20:13.076Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/76/c0/8cc378aad5ccfcc37adeda27d3864f20ea808ad5b63572f5b986a42a649c/jupyter_dark_detect-0.1.0-py3-none-any.whl", hash = "sha256:198a7fa1270c6ce1ac2fd056cea9300e018bb8d04211de4c946cbe9e03e7a89d", size = 7978, upload-time = "2025-07-27T16:20:12.167Z" },
-]
-
-[[package]]
 name = "matplotlib-inline"
 version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1056,7 +1044,6 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "ftfy" },
-    { name = "jupyter-dark-detect" },
 ]
 
 [package.dev-dependencies]
@@ -1070,10 +1057,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "ftfy", specifier = "==6.3.1" },
-    { name = "jupyter-dark-detect", specifier = "==0.1.0" },
-]
+requires-dist = [{ name = "ftfy", specifier = "==6.3.1" }]
 
 [package.metadata.requires-dev]
 dev = [
